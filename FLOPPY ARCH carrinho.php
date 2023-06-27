@@ -17,11 +17,11 @@
     
 </head>
 <body style="background-image: url(img/Fundo.png);">
-    <div class="titulo">
-          <img src="img/titulo.png" alt="Título">
-        
-      </div>
-      <?php
+<div class='d0'>
+<div class='d1'></div> 
+<div class='d2'>
+    <div class='d21'>
+        <?php
         session_start();
         include ("conecta.php");
         $comando = $pdo->prepare("SELECT * FROM carrinho WHERE nick = :user");
@@ -30,13 +30,35 @@
     
         $resultado = $comando->execute();
 
-        while( $linhas = $comando->fetch()) 
-            {
-                $m = $linhas['id_carrinho'];
-                $n = $linhas["item"];
-                echo "<div style='z-index:1;display:flex;justify-content:space-between;width:10%; background-color:white;'><span onclick='remove($m)' style='width:10%;background-color:red'>x</span>item: $n </div> <br>";
-            }
-      ?>
+        while ($linhas = $comando->fetch()) {
+            $m = $linhas['id_carrinho'];
+            $n = $linhas["item"];
+            echo "<div style='z-index: 1; display: flex; justify-content: space-between; width: 45%; font-size: 20px; height: 10%; background-color: yellow; color: #5c5b9c; font-family: \"AuX DotBitC Xtra SmallCaps\", sans-serif;'>
+            <span onclick='remove($m)' style='width: 10%; height: 100%; background-color: red; color: black;'>x</span>
+            300R$ / item: $n
+          </div><br>";
+    
+        }
+        ?>
+    </div>
+    <div class='d22'>
+        <?php
+        $comando->execute();
+        $quantidadeItens = 0;
+
+        while ($linhas = $comando->fetch()) {
+            $quantidadeItens++;
+        }
+
+        $total = $quantidadeItens * 300;
+        echo "<div style='color: yellow; font-family: \"AuX DotBitC Xtra SmallCaps\", sans-serif; font-size: 35px;'>Total: " . $total . "R$</div>";
+
+        ?>
+
+        <button class="robertocarlos" type="button">Finalizar compra</button>
+    </div>
+</div>
+
     <img src="img/diskmenu.png" alt="Menu" id="menu-botao" class="menu-image">
 
     <ul id="menu">
@@ -55,4 +77,7 @@
     window.open("remover.php?id=" + x, "_self");
   }
 </script>
+</div>
+<div class='d3'></div>
+</div>
 </html>   
