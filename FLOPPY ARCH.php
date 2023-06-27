@@ -1,3 +1,10 @@
+<?php 
+    session_start();
+    if (!isset($_SESSION['jaentrou'])){
+        $_SESSION['usuario'] = 'nenhum';
+        $_SESSION['jaentrou'] = 1;
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -62,7 +69,7 @@
     <li class="menu-item"><a href="FLOPPY ARCH comprar.html">comprar</a></li>
     <li class="menu-item"><a href="FLOPPY ARCH carrinho.html">carrinho</a></li>
     <li class="menu-item"><a href="FLOPPY ARCH.html">Inicio</a></li>
-    <li class="menu-item"><a href="FLOPPY ARCH entrar.html">entrar</a></li>
+    <li class="menu-item"><a href="FLOPPY ARCH entrar.php">entrar</a></li>
     <li class="menu-item"><a href="FLOPPY ARCH contato.html">contato</a></li>
   </ul>
   
