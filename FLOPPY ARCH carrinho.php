@@ -51,7 +51,7 @@
         }
 
         $total = $quantidadeItens * 300;
-        echo "<div style='color: yellow; font-family: \"AuX DotBitC Xtra SmallCaps\", sans-serif; font-size: 35px;'>Total: " . $total . "R$</div>";
+        echo "<div id='valor' name='valor' style='color: yellow; font-family: \"AuX DotBitC Xtra SmallCaps\", sans-serif; font-size: 35px;'>Total: " . $total . "R$</div>";
 
         ?>
 

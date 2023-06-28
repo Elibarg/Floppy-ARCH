@@ -70,7 +70,8 @@
     <li class="menu-item"><a href="FLOPPY ARCH carrinho.html">carrinho</a></li>
     <li class="menu-item"><a href="FLOPPY ARCH.php">Inicio</a></li>
     <li class="menu-item"><a href="FLOPPY ARCH entrar.html">entrar</a></li>
-<li class="menu-item"><a href="FLOPPY ARCH contato.html">contato</a></li>
+    <li class="menu-item"><a href="FLOPPY ARCH contato.html">contato</a></li>
+    <li class="menu-item"><a href="Perfil.html">Perfil</a></li>
  </ul>
   
 </body>
