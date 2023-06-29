@@ -25,9 +25,9 @@ else
     $nome = $cu["nick"];
     $_SESSION['usuario'] = $nome;
 
-    if($admim == "bct")
+    if($admim == "s")
     {
-        header("Location: admin.html");
+        header("Location: admim.html");
         exit; // Encerra a execução do script após o redirecionamento
     }
     else
