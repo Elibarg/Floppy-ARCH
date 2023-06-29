@@ -51,19 +51,20 @@ $nome = $resultado['nome'];
                 <p>Email: <span id="email">email@exemplo.com</span></p>
                 <p>Telefone: <span id="telefone">123456789</span></p>
                 <button class="pulha2" id="editar">Editar Informações</button>
+                
             </div>
         </div>
     </div>
     <img src="img/diskmenu.png" alt="Menu" id="menu-botao" class="menu-image">
 
     <ul id="menu">
-        <li class="menu-item"><a href="FLOPPY ARCH comprar.html">comprar</a></li>
-        <li class="menu-item"><a href="FLOPPY ARCH carrinho.html">carrinho</a></li>
-        <li class="menu-item"><a href="FLOPPY ARCH.php">Inicio</a></li>
-        <li class="menu-item"><a href="FLOPPY ARCH entrar.html">entrar</a></li>
-        <li class="menu-item"><a href="FLOPPY ARCH contato.html">contato</a></li>
-        <li class="menu-item"><a href="Perfil.html">Perfil</a></li>
-    </ul>
+    <li class="menu-item"><a href="FLOPPY ARCH comprar.html">comprar</a></li>
+    <li class="menu-item"><a href="FLOPPY ARCH carrinho.html">carrinho</a></li>
+    <li class="menu-item"><a href="FLOPPY ARCH.php">Inicio</a></li>
+    <li class="menu-item"><a href="FLOPPY ARCH entrar.html">entrar</a></li>
+    <li class="menu-item"><a href="FLOPPY ARCH contato.html">contato</a></li>
+    <li class="menu-item"><a href="Perfil.php">Perfil</a></li>
+</ul>
 
     <script>
         function previewImagem() {
