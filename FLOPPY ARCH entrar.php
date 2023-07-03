@@ -4,7 +4,7 @@
     if ($_SESSION['usuario'] != 'nenhum') {
         $paginasupostapraseroperfil = 'FLOPPY ARCH.php';
         header("location: $paginasupostapraseroperfil");
-    }
+    } 
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

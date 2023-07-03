@@ -1,23 +1,23 @@
-<?php
-session_start();
-if (!isset($_SESSION['usuario']) || empty($_SESSION['usuario'])) {
-    header("Location: FLOPPY ARCH entrar.html");
-    exit;
-}
+  <?php
+                    
+                    include ("conecta.php");
+                   
+                    $comando = $pdo->prepare("SELECT * FROM cadastro ");
+                    $resultado = $comando->execute();
+            
+                    while( $linhas = $comando->fetch()){
+                        $nome = $linhas["nome"];
+                        $telefone = $linhas["telefone"];
+                        $email = $linhas["email"];
+                    
 
-// Conexão com o banco de dados
-include("conecta.php");
+                    }
 
-$nomeUsuario = $_SESSION['usuario'];
 
-// Consulta para recuperar o nome do usuário do banco de dados
-$comando = $pdo->prepare("SELECT nome FROM cadastro WHERE nick = :nick");
-$comando->bindParam(':nick', $nomeUsuario);
-$comando->execute();
-$resultado = $comando->fetch();
 
-$nome = $resultado['nome'];
-?>
+
+                ?>
+                
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -47,9 +47,9 @@ $nome = $resultado['nome'];
         <div class="d2">
             <div class="inf">
                 <h2>Informações do Usuário</h2>
-                <p>Nome: <span id="nome"><?php echo $nome; ?></span></p>
-                <p>Email: <span id="email">email@exemplo.com</span></p>
-                <p>Telefone: <span id="telefone">123456789</span></p>
+                <p>Nome: <span id="nome" name="nome"><?php echo("$nome") ?></span></p>
+                <p>Email: <span id="email"name="email"><?php echo ("$email"); ?></span></p>
+                <p>Telefone: <span id="telefone" name="telefone"><?php echo ("$telefone"); ?></span></p>
                 <button class="pulha2" id="editar">Editar Informações</button>
                 
             </div>
