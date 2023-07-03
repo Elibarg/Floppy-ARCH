@@ -40,9 +40,6 @@ CREATE TABLE `cadastro` (
 -- Despejando dados para a tabela `cadastro`
 --
 
-INSERT INTO `cadastro` (`nick`, `senha`, `nome`, `telefone`, `email`, `admim`) VALUES
-('buceta', 'sexopracaralho', '', '', '', 'anus');
-
 -- --------------------------------------------------------
 
 --
