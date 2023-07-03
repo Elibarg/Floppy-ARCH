@@ -33,7 +33,17 @@
         while ($linhas = $comando->fetch()) {
             $m = $linhas['id_carrinho'];
             $n = $linhas["item"];
-            echo "<div style='z-index: 1; display: flex; justify-content: space-between; width: 45%; font-size: 20px; height: 10%; background-color: yellow; color: #5c5b9c; font-family: \"AuX DotBitC Xtra SmallCaps\", sans-serif;'>
+            echo "<div style='
+            z-index: 1; 
+            display: flex; 
+            justify-content: space-between; 
+            width: 45%; 
+            font-size: 20px; 
+            height: 10%; 
+            background-color: yellow;
+             color: #5c5b9c;
+            font-family: \"AuX DotBitC Xtra SmallCaps\", sans-serif;
+            animation: bounceInUp 4s;'>
             <span onclick='remove($m)' style='width: 10%; height: 100%; background-color: red; color: black;'>x</span>
             300R$ / item: $n
           </div><br>";
@@ -51,11 +61,11 @@
         }
 
         $total = $quantidadeItens * 300;
-        echo "<div id='valor' name='valor' style='color: yellow; font-family: \"AuX DotBitC Xtra SmallCaps\", sans-serif; font-size: 35px;'>Total: " . $total . "R$</div>";
+        echo "<div id='valor' name='valor' style='  animation: bounceInUp 4s; color: yellow; font-family: \"AuX DotBitC Xtra SmallCaps\", sans-serif; font-size: 35px;'>Total: " . $total . "R$</div>";
 
         ?>
 
-        <button class="robertocarlos" type="button">Finalizar compra</button>
+        <button class="pulha8" type="button">Finalizar compra</button>
     </div>
 </div>
 

@@ -61,14 +61,14 @@ body
         color: white;
     }
     .pulha
-      {
-          width: 85px;
-          height: 45px;
-          background-color: yellow;
-          font-size: 16px;
-          cursor: url("cursor.png");
-          color: black;
-      }
-      .pulha:hover{
-          background-color: #ffd000;
-      }
+{
+  width: 75px;
+  height: 45px;
+  background-color: yellow;
+  font-size: 16px;
+  cursor: url("cursor.png");
+  color: black;
+}
+.pulha:hover{
+  background-color: #ffd000;
+}

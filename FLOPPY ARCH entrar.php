@@ -28,10 +28,10 @@
                 <br> <br>
                 Senha:<input type="password" style="display:block; margin: 0 auto;width: 300px;height: 27px;" class="caixa_larga" id="senha"name="senha">
             </fieldset>
-            <button type="submit" class="pulha" style="display: block; margin: 0 auto;font-size: 36px; height: 50px;width: 180px;font-family: 'AuX DotBitC Xtra SmallCaps', sans-serif; color: yellow;">
+            <button type="submit" class="pulha" style="display: block; margin: 0 auto;font-size: 36px; height: 50px;width: 180px;font-family: 'AuX DotBitC Xtra SmallCaps', sans-serif; ">
                     Entrar
             </button>
-            <button class="pulha" style="display: block; margin: 0 auto;font-size: 36px; height: 50px;width: 260px;font-family: 'AuX DotBitC Xtra SmallCaps', sans-serif; color: yellow;">
+            <button class="pulha" style="display: block; margin: 0 auto;font-size: 36px; height: 50px;width: 260px;font-family: 'AuX DotBitC Xtra SmallCaps', sans-serif; ">
                 <a href="cadastro.html" style="display: block; height: 100%; width: 100%; text-decoration: none; color: inherit;">
                 Cadastrar
                 </a>

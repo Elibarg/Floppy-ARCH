@@ -51,7 +51,7 @@
                 <p>Email: <span id="email"name="email"><?php echo ("$email"); ?></span></p>
                 <p>Telefone: <span id="telefone" name="telefone"><?php echo ("$telefone"); ?></span></p>
                 <button class="pulha2" id="editar">Editar Informações</button>
-                
+                <button class="pulha3" id="sair">Sair</button>
             </div>
         </div>
     </div>

@@ -90,3 +90,15 @@ body {
 .pulha2:hover{
   background-color: #ffd000;
 }
+.pulha3
+{
+  width: 70px;
+  height: 45px;
+  background-color: rgb(255, 0, 0);
+  font-size: 16px;
+  cursor: url("cursor.png");
+  color: yellow;
+}
+.pulha3:hover{
+  background-color: #ff7300;
+}
