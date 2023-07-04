@@ -56,8 +56,7 @@ CREATE TABLE `carrinho` (
 -- Despejando dados para a tabela `carrinho`
 --
 
-INSERT INTO `carrinho` (`id_carrinho`, `nick`, `item`) VALUES
-(20, 'buceta', 'colorido');
+
 
 --
 -- Índices para tabelas despejadas
