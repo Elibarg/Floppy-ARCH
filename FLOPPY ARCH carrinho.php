@@ -65,7 +65,7 @@
 
         ?>
 
-        <button class="pulha8" type="button">Finalizar compra</button>
+<a href="Finalizar compra.html" ><button class="pulha8" type="button" > Finalizar compra</button></a>
     </div>
 </div>
 
