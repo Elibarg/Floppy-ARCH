@@ -88,7 +88,7 @@ ALTER TABLE `carrinho`
 --
 -- Restrições para tabelas despejadas
 --
-
+INSERT INTO `cadastro` (`nick`, `senha`, `nome`, `telefone`, `email`, `admim`) VALUES ('arauto', '123', 'mickey', '974562330', 'cr7@gmail', 's');
 --
 -- Restrições para tabelas `carrinho`
 --
